@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --red: #ed1c24;
+    --green: #28a745;
+    --gray: #0f0f0f
+}
+
+@font-face {
+    font-family: inter;
+    src: url("../assets/fonts/inter/Inter.ttf");
+}
+
+@font-face {
+    font-family: apercu;
+    src: url("../assets/fonts/Apercu/Apercu-regular.otf");
+}
+
+@font-face {
+    font-family: futurak;
+    src: url("../assets/fonts/futurak/futurak.ttf");
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: inter;
+}
+
+
+
+
+/* navbar started */
+.main-logo {
+    width: 165px;
+}
+
+.nav-items>a {
+    color: var(--white);
+    font-size: 1.9rem;
+    text-decoration: none;
+}
+
+.nav-items>button {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.get-frinchise {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.order-btn {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 12px 17px;
+    border-radius: 30px;
+}
+
+.order-icon {
+    color: var(--red);
+    background-color: var(--white);
+    padding: 5px 6px;
+    border-radius: 25px;
+}
+
+/* navbar ended */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset browser margin and set dark background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* Black background like Salt’n Pepper site */
+    font-family: Arial, sans-serif;
+    /* Simple readable font */
+}
+
+/* Wrapper for the page content */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+    /* Side spacing */
+}
+
+/* Flexbox row for layout structure */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow multiple lines */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+/* Half column for image boxes on smaller screens */
+.column-half {
+    width: 100%;
+    /* Full width on small devices */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Full column for text section */
+.column-full {
+    width: 100%;
+    padding: 15px;
+}
+
+/* On tablets and above, show 2 images side by side */
+@media (min-width: 768px) {
+    .column-half {
+        width: 50%;
+    }
+}
+
+/* Section spacing from top and bottom */
+.section-wrapper {
+    padding: 72px 0;
+}
+
+/* Box around image with border and spacing */
+.image-box {
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    /* Transparent white border */
+    padding: 32px 0 40px;
+    margin-bottom: 32px;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+/* Responsive image with hover effect */
+.image-box img {
+    width: 100%;
+    transition: transform 0.5s;
+    /* Zoom effect */
+    display: block;
+}
+
+.image-box img:hover {
+    transform: scale(1.1);
+    /* Zoom in on hover */
+}
+
+/* Center aligned info section */
+.info-box {
+    text-align: center;
+    margin-top: 32px;
+}
+
+/* Heading for the branch section */
+.info-box h3 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+/* Each branch info block */
+.branch-info {
+    margin-bottom: 20px;
+}
+
+/* Branch name style */
+.branch-info span {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    margin-top: 12px;
+    line-height: 36px;
+}
+
+/* Address style */
+.branch-info p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    /* Slightly faded white */
+    margin: 5px 0;
+}
+
+/* Phone number link style */
+.branch-info a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    /* Slightly faded white */
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Container Reset & Layout --- */
+
+/* Hide original copyright section */
+section.copyright {
+    display: none !important;
+}
+
+/* Main footer section styling */
+.footer {
+    color: #fff;
+    width: 100%;
+    padding: 70px 15px 0;
+    background: rgba(255, 255, 255, 0.06);
+    position: relative;
+    float: left;
+}
+
+/* Max container width */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Decorative footer background layer */
+.footer-background img {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+
+/* Grid layout for footer content */
+.footer-content-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 0.8fr 1fr 0.8fr;
+    gap: 30px 45px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 55px;
+}
+
+/* Individual footer section */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Footer logo styling */
+.footer-section .footer-logo {
+    margin: 0 !important;
+    width: 140px !important;
+    padding-bottom: 24px;
+}
+
+/* Paragraph text in first footer section */
+.footer-section p {
+    margin: 0 !important;
+    padding-bottom: 24px;
+    text-align: left;
+    font-family: 'Apercu', sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Useful policy links list */
+.policy-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.policy-links li a {
+    font-family: 'Apercu', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    letter-spacing: 0.03em;
+}
+
+/* --- Footer Headings & Lists --- */
+
+/* Section headings like "Site Links", "Contact Us" */
+.footer-heading {
+    font-family: 'Butler', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 24px;
+}
+
+/* Links list under headings */
+.footer-links,
+.contact-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Each item in footer-links */
+.footer-links li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.footer-links li:last-child {
+    padding-bottom: 0;
+}
+
+.footer-links li a {
+    font-family: 'Apercu', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- Contact info details --- */
+
+.contact-info li {
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.contact-info li:last-child {
+    padding-bottom: 0;
+}
+
+.contact-info li a {
+    font-family: 'Apercu', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.contact-info li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Styling contact headings inside the list */
+.contact-info li.label {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 0 !important;
+}
+
+/* --- Social & App Links Styling --- */
+
+/* Social icons container */
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: flex-start;
+}
+
+/* Social icon buttons */
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    background: #ED1C24;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social-links a i {
+    font-size: 17px;
+    color: #fff;
+}
+
+/* App download buttons list */
+.app-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-links ul li {
+    margin-bottom: 13px;
+}
+
+.app-links ul li a img {
+    max-width: 100%;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-content-wrapper {
+        grid-template-columns: 1.2fr 1fr 1fr;
+    }
+}
+
+/* Mobile small screens */
+@media (max-width: 767px) {
+    .footer-section .footer-logo {
+        width: 135px !important;
+        padding-bottom: 30px;
+    }
+
+    .footer-content-wrapper {
+        grid-template-columns: 1.1fr 1fr;
+        gap: 22px 0;
+    }
+
+    .footer-section p {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Very small mobile <= 540px */
+@media (max-width: 540px) {
+    .footer-content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 22px 0;
+    }
+
+    .footer-heading {
+        padding-bottom: 0;
+    }
+
+    /* On mobile hide panel accordion icons if any */
+}
+
+/* --- Copy-right section styling --- */
+
+.copyright {
+    color: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+}

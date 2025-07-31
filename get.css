@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --red: #ed1c24;
+    --green: #28a745;
+    --gray: #0f0f0f
+}
+
+@font-face {
+    font-family: inter;
+    src: url("../assets/fonts/inter/Inter.ttf");
+}
+
+@font-face {
+    font-family: apercu;
+    src: url("../assets/fonts/Apercu/Apercu-regular.otf");
+}
+
+@font-face {
+    font-family: futurak;
+    src: url("../assets/fonts/futurak/futurak.ttf");
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: inter;
+}
+
+
+/* navbar started */
+.main-logo{
+    width: 165px;
+}
+.nav-items > a {
+    color: var(--white);
+    font-size: 1.9rem;
+    text-decoration: none;
+}
+
+.nav-items > button {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.nav-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.get-frinchise{
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.order-btn{
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 12px 17px;
+    border-radius: 30px;
+}
+
+.order-icon{
+    color: var(--red);
+    background-color: var(--white);
+    padding: 5px 6px;
+    border-radius: 25px;
+}
+/* navbar ended */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Section Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.franchise-section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.franchise-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Form Layout */
+.franchise-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-group input {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+  color: black;
+}
+
+/* Error icon style */
+.error-icon {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  right: 12px;
+  top: 42px;
+  display: none;
+}
+
+/* Button */
+.submit-btn {
+  background-color: #ffc107;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  margin: 30px auto 0;
+  transition:  0.3s;
+  
+
+  
+}
+.button-wrap {
+  display: flex;
+  justify-content: center;  /* RIGHT align */
+  margin-top: 30px;
+}
+
+.submit-btn:hover {
+  background-color: #e6ac00;
+}
+button {
+  padding: 16px 40px;          /* Inner space */
+  background: #ffc107;         /* Yellow color */
+  color: #000;                 /* Black text */
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 180px;            /* Fix minimum size */
+  max-width: 250px;            /* Prevent stretching */
+  width: auto;                 /* THIS is important: avoid full width */
+  display: inline-block;       /* Prevent full stretch */
+}
+
+
+
+
+
+ /* --- Container Reset & Layout --- */
+
+/* Hide original copyright section */
+section.copyright {
+  display: none !important;
+}
+
+/* Main footer section styling */
+.footer {
+  color: #fff;
+  width: 100%;
+  padding: 70px 15px 0;
+  background: rgba(255, 255, 255, 0.06);
+  position: relative;
+  float: left;
+}
+
+/* Max container width */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Decorative footer background layer */
+.footer-background img {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+/* Grid layout for footer content */
+.footer-content-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1.5fr 0.8fr 1fr 0.8fr;
+  gap: 30px 45px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 55px;
+}
+
+/* Individual footer section */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Footer logo styling */
+.footer-section .footer-logo {
+  margin: 0 !important;
+  width: 140px !important;
+  padding-bottom: 24px;
+}
+
+/* Paragraph text in first footer section */
+.footer-section p {
+  margin: 0 !important;
+  padding-bottom: 24px;
+  text-align: left;
+  font-family: 'Apercu', sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Useful policy links list */
+.policy-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.policy-links li a {
+  font-family: 'Apercu', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+/* --- Footer Headings & Lists --- */
+
+/* Section headings like "Site Links", "Contact Us" */
+.footer-heading {
+  font-family: 'Butler', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 24px;
+}
+
+/* Links list under headings */
+.footer-links,
+.contact-info {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each item in footer-links */
+.footer-links li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.footer-links li:last-child {
+  padding-bottom: 0;
+}
+
+.footer-links li a {
+  font-family: 'Apercu', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- Contact info details --- */
+
+.contact-info li {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.contact-info li:last-child {
+  padding-bottom: 0;
+}
+
+.contact-info li a {
+  font-family: 'Apercu', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.contact-info li a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Styling contact headings inside the list */
+.contact-info li.label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 0 !important;
+}
+
+/* --- Social & App Links Styling --- */
+
+/* Social icons container */
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: flex-start;
+}
+
+/* Social icon buttons */
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+  background: #ED1C24;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.social-links a i {
+  font-size: 17px;
+  color: #fff;
+}
+
+/* App download buttons list */
+.app-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-links ul li {
+  margin-bottom: 13px;
+}
+
+.app-links ul li a img {
+  max-width: 100%;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-content-wrapper {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+}
+
+/* Mobile small screens */
+@media (max-width: 767px) {
+  .footer-section .footer-logo {
+    width: 135px !important;
+    padding-bottom: 30px;
+  }
+  .footer-content-wrapper {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 22px 0;
+  }
+  .footer-section p {
+    text-align: center;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Very small mobile <= 540px */
+@media (max-width: 540px) {
+  .footer-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 22px 0;
+  }
+  .footer-heading {
+    padding-bottom: 0;
+  }
+  /* On mobile hide panel accordion icons if any */
+}
+
+/* --- Copy-right section styling --- */
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+}
